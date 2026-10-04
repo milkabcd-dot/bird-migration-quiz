@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>חידון: השרטוט הביולוגי של נדידת הסתיו</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b3a7a;--panel:#0f4a96;--ink:#fff;--soft:#bfe3ff;--c1:#29b6f6;--c2:#ffb02e;--c3:#ff5fa2;--c4:#7be07b;--ok:#2ecc71;--bad:#ff5252;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;font-family:Heebo,Arial,sans-serif;color:var(--ink);background-color:var(--bg);
+background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:28px 28px}
+.wrap{max-width:720px;margin:0 auto;padding:18px 16px 28px}
+h1{font-size:clamp(26px,6vw,40px);font-weight:900;margin:8px 0 4px;line-height:1.15}
+.sub{color:var(--soft);margin:0 0 14px;font-size:17px}
+.bar{height:12px;background:rgba(255,255,255,.2);border-radius:99px;overflow:hidden;margin:10px 0 6px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c1),var(--c4),var(--c2),var(--c3));transition:width .4s}
+.meta{display:flex;justify-content:space-between;color:var(--soft);font-size:15px;margin-bottom:12px}
+.card{background:var(--panel);border:2px solid rgba(255,255,255,.35);border-radius:22px;padding:20px 18px}
+.q{font-size:clamp(20px,4.6vw,26px);font-weight:700;margin:0 0 16px;line-height:1.35}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:right;font:inherit;font-size:18px;font-weight:700;color:#06264d;border:0;border-radius:16px;padding:14px;margin:0 0 10px;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.25);transition:transform .1s}
+.opt:hover:not(:disabled){transform:translateY(-2px)}
+.opt:focus-visible,.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.opt b{flex:none;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.65);display:grid;place-items:center;font-size:17px}
+.o0{background:var(--c1)}.o1{background:var(--c2)}.o2{background:var(--c3)}.o3{background:var(--c4)}
+.opt:disabled{cursor:default}
+.opt.dim{opacity:.4}
+.opt.right{outline:5px solid var(--ok);outline-offset:1px}
+.opt.wrong{outline:5px solid var(--bad);outline-offset:1px}
+.fb{margin-top:6px;padding:12px 14px;border-radius:14px;background:rgba(0,0,0,.28);font-size:17px;line-height:1.45;display:none}
+.fb strong{display:block;margin-bottom:2px}
+.btn{margin-top:14px;font:inherit;font-weight:900;font-size:19px;color:#06264d;background:#fff;border:0;border-radius:99px;padding:12px 28px;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.3)}
+.center{text-align:center}
+.big{font-size:64px;font-weight:900;margin:6px 0}
+.credit{margin-top:22px;text-align:center;color:var(--c2);font-weight:700;font-size:17px}
+.scene{display:none;position:relative;margin:4px 0 8px;border-radius:16px;background:rgba(0,0,0,.22);overflow:hidden}
+.scene.on{display:block}
+.scene svg{display:block;width:100%;max-width:420px;margin:0 auto;height:auto}
+.yum{position:absolute;top:8px;right:14px;font-size:22px;font-weight:900;color:var(--c2);opacity:0}
+.go .fish{animation:jump 1.5s ease-in-out forwards}
+.go .pouch{animation:gulp .7s 1.35s ease-in-out}
+.go .peli{animation:nod .5s 1.3s ease-in-out}
+.go ~ .yum,.scene.go .yum{animation:yum 1.2s 1.6s ease-out forwards}
+.fish{opacity:0}
+@keyframes jump{0%{opacity:0;transform:translate(0,6px) rotate(-90deg)}12%{opacity:1;transform:translate(0,-10px) rotate(-90deg)}45%{opacity:1;transform:translate(8px,-78px) rotate(-100deg)}78%{opacity:1;transform:translate(16px,-60px) rotate(-70deg) scale(.9)}92%{opacity:1;transform:translate(16px,-58px) scale(.3)}100%{opacity:0;transform:translate(16px,-58px) scale(0)}}
+@keyframes gulp{0%,100%{transform:scale(1,1)}40%{transform:scale(1.15,1.7)}}
+@keyframes nod{0%,100%{transform:rotate(0)}50%{transform:rotate(-4deg)}}
+@keyframes yum{0%{opacity:0;transform:scale(.6)}30%{opacity:1;transform:scale(1.15)}100%{opacity:1;transform:scale(1)}}
+.peli{transform-origin:200px 100px}
+.pouch{transform-origin:104px 56px}
+@media (prefers-reduced-motion:reduce){.go .fish,.go .pouch,.go .peli{animation:none!important}.scene.go .yum{animation:none!important;opacity:1}}
+.hide{display:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>חידון השרטוט הביולוגי</h1>
+  <p class="sub">נדידת הסתיו בישראל דרך משקפי ה-STEAM</p>
+  <div id="quiz">
+    <div class="bar"><i id="pb"></i></div>
+    <div class="meta"><span id="qn"></span><span id="sc"></span></div>
+    <div class="card">
+      <p class="q" id="q"></p>
+      <div id="opts"></div>
+      <div class="scene" id="scene" aria-hidden="true">
+        <svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 122 Q25 114 50 122 T100 122 T150 122 T200 122 T250 122 T300 122 V140 H0Z" fill="#29b6f6" opacity=".6"/>
+          <g transform="translate(30,120)"><g class="fish"><ellipse rx="13" ry="7" fill="#ff5fa2"/><polygon points="12,0 24,-8 24,8" fill="#ff5fa2"/><circle cx="-7" cy="-2" r="1.8" fill="#06264d"/></g></g>
+          <g class="peli">
+            <polygon points="258,84 296,96 258,106" fill="#dcebff"/>
+            <ellipse cx="200" cy="92" rx="70" ry="30" fill="#fff"/>
+            <ellipse cx="208" cy="90" rx="44" ry="19" fill="#cfe6ff"/>
+            <path d="M150 86 Q124 80 120 54" stroke="#fff" stroke-width="20" fill="none" stroke-linecap="round"/>
+            <circle cx="118" cy="48" r="16" fill="#fff"/>
+            <circle cx="112" cy="44" r="3" fill="#06264d"/>
+            <path class="pouch" d="M104 56 Q72 94 42 64 Z" fill="#ffd27a"/>
+            <polygon points="104,42 40,62 42,66 104,56" fill="#ffb02e"/>
+          </g>
+        </svg>
+        <span class="yum">נאם נאם! 🐟</span>
+      </div>
+      <div class="fb" id="fb"></div>
+      <div class="center"><button class="btn hide" id="next"></button></div>
+    </div>
+  </div>
+  <div id="end" class="card center hide">
+    <div class="big" id="emoji"></div>
+    <h2 id="score" style="font-size:30px;margin:0 0 6px"></h2>
+    <p id="msg" style="font-size:19px;color:var(--soft);margin:0 0 6px"></p>
+    <button class="btn" id="again">שחקו שוב</button>
+  </div>
+  <div class="credit">עריכה: מילכה ברקו גרש</div>
+</div>
+<script>
+const Q=[
+{q:"מה הגורם הגיאוגרפי שגורם למיליוני ציפורים לעבור דווקא בשמי ישראל?",o:["ישראל נמצאת קרוב לקו המשווה ולכן חם בה כל השנה","ישראל היא הגשר היבשתי היחיד בין אירופה, אסיה ואפריקה, והעופות מתנקזים למעבר צר","בישראל יש הרי געש שיוצרים זרמי אוויר חם","רשויות התעופה מכוונות את הציפורים לנתיב אחד"],a:1,e:"הגשר היבשתי בין שלוש היבשות יוצר צוואר בקבוק, ולכן אפשר לראות מאות אלפי עופות חוצים את אותו מעבר."},
+{q:"איזה מהגורמים הבאים מושך ציפורים נודדות לאפריקה החמה בחורף?",o:["שפע משאבים, כמו דגים וחרקים","קיצור שעות האור","צניחת טמפרטורה","מקורות מזון קפואים"],a:0,e:"קיצור שעות האור, צניחת טמפרטורה ומזון קפוא הם דווקא הגורמים שדוחפים אותן החוצה מאירופה הקופאת."},
+{q:"באיזה חלון זמן מתרחשת נדידת הסתיו המרכזית בישראל?",o:["מאמצע ספטמבר ועד סוף דצמבר","מסוף אוגוסט ועד אמצע נובמבר","מתחילת יוני ועד סוף יולי","מאמצע נובמבר ועד סוף פברואר"],a:1,e:"זהו החלון הקריטי של נדידת הסתיו המרכזית. השקנאים יכולים להישאר במקווי המים עד דצמבר."},
+{q:"איזו התאמה בין הציפור לשם המדעי שלה נכונה?",o:["חסידה לבנה – Pelecanus onocrotalus","שקנאי מצוי – Ciconia ciconia","חסידה לבנה – Ciconia ciconia","שני המינים נקראים Ciconia ciconia"],a:2,e:"Ciconia ciconia היא החסידה הלבנה, ו-Pelecanus onocrotalus הוא השקנאי המצוי."},
+{q:"באיזה תהליך החסידה הלבנה צוברת גובה בלי להשקיע אנרגיה אקטיבית?",o:["דאייה תרמית: היא מסתובבת בתוך זרם אוויר חם שעולה מהקרקע","נפנוף כנפיים מהיר בשילוב רוח גבית","צלילה מהירה כדי לצבור תנופה","ניצול זרמי אוויר קר היורדים מההרים"],a:0,e:"אחרי העלייה בטרמיקה היא גולשת דרומה בלי כמעט להניע את הכנפיים, ולכן היא חוסכת אנרגיה."},
+{q:"מוטת הכנפיים של שקנאי מצוי מגיעה עד 3 מטרים, וגובהו של אדם בוגר הוא כ-1.8 מטר. מה נכון?",o:["מוטת הכנפיים קטנה מגובה האדם","מוטת הכנפיים כמעט שווה לגובה האדם","מוטת הכנפיים גדולה בערך פי 1.7 מגובה האדם","מוטת הכנפיים גדולה בערך פי 5 מגובה האדם"],a:2,e:"3 : 1.8 ≈ 1.7. מוטה כזו מאפשרת דאייה, אבל ההמראה והתחזוקה של גוף כבד מצריכות הרבה אנרגיה."},
+{q:"איפה שקנאים חייבים לעצור כדי לחדש כוחות בנדידה?",o:["במקווי מים עם דגים זמינים, כמו אגמון החולה ובריכות דגים מסחריות","על צוקים גבוהים שמהם קל להמריא","בשדות חיטה עשירים בחרקים","בפסגות הרים עם טרמיקות חזקות"],a:0,e:"אלה תחנות התדלוק של השקנאי. הוא ניזון מדגים, ולכן מקווי מים הם מקור האנרגיה שלו."},
+{q:"מדוע השקנאי תלוי בתחנות תדלוק יותר מהחסידה הלבנה?",o:["הוא קל יותר ולכן מתעייף מהר","הוא כבד וגדול, ובדאייה אקטיבית הוא מוציא הרבה אנרגיה","הוא נודד רק בלילה ולכן לא רואה טרמיקות","מוטת הכנפיים שלו קטנה ופוגעת ביכולת הדאייה"],a:1,e:"החסידה נשענת על דאייה פסיבית בטרמיקות. השקנאי משלב חתירה וטפיחות כנף, והדבר שורף אנרגיה."},
+{q:"ציפור דואה בגובה קבוע ובמהירות קבועה. מה נכון לגבי ארבעת הכוחות הפועלים עליה?",o:["הכבידה חזקה מהעילוי","העילוי חזק מהכבידה","העילוי גדול מהגרר והדחף קטן מהכבידה","העילוי מאזן את הכבידה והדחף מאזן את הגרר"],a:3,e:"כל גוף באוויר מנהל מאבק לאזן בין ארבעת הכוחות. בטיסה יציבה הם מתקזזים בזוגות."},
+{q:"איזו התאמה בין כוח לתיאורו נכונה?",o:["גרר – התנגדות האוויר לגוף הציפור","עילוי – כוח המושך את הציפור אל הקרקע","דחף – התנגדות האוויר לתנועה","כבידה – כוח שנוצר מטפיחת הכנף"],a:0,e:"עילוי דוחף למעלה, דחף נוצר מטפיחת הכנף, והכבידה מושכת למטה."},
+{q:"באיזו שיטה ממפים באוניברסיטת תל אביב את היקף הנדידה ועיתויה בזמן אמת?",o:["משדרי GPS קטנים שמחוברים לשקנאים","דאונים שטסים יחד עם להקות הציפורים","שילוב של מכ״ם ותצפיות","טבעות זיהוי על רגלי הציפורים"],a:2,e:"משדרי GPS שייכים למעקב הלוויני של אוניברסיטת חיפה, והדאונים משמשים למדידת תנאי הטרמיקות."},
+{q:"בתכנון תחנת התרעננות לשקנאים בעמק החולה סיימתם לשרטט מודל. מה השלב הבא במעגל התכנון ההנדסי?",o:["בנייה","בחינת חומרים","העלאת רעיונות","שיפור הדגם"],a:1,e:"הסדר הוא: הגדרת הבעיה, העלאת רעיונות, שרטוט מודל, בחינת חומרים, בנייה, בדיקה רעיונית ושיפור הדגם. ואז המעגל חוזר על עצמו."}
+];
+const L=["א","ב","ג","ד"];
+let i=0,s=0,done=false;
+const $=id=>document.getElementById(id);
+function show(){
+  done=false;const d=Q[i];
+  $("qn").textContent="שאלה "+(i+1)+" מתוך "+Q.length;
+  $("sc").textContent="⭐ "+s;
+  $("pb").style.width=(i/Q.length*100)+"%";
+  $("q").textContent=d.q;
+  $("opts").innerHTML="";
+  d.o.forEach((t,k)=>{
+    const b=document.createElement("button");
+    b.className="opt o"+k;
+    b.innerHTML="<b>"+L[k]+"</b><span></span>";
+    b.lastChild.textContent=t;
+    b.onclick=()=>pick(k);
+    $("opts").appendChild(b);
+  });
+  $("fb").style.display="none";
+  $("scene").classList.remove("on","go");
+  $("next").classList.add("hide");
+}
+function pick(k){
+  if(done)return;done=true;
+  const d=Q[i],bs=$("opts").children;
+  [...bs].forEach((b,j)=>{b.disabled=true;if(j==d.a)b.classList.add("right");else if(j==k)b.classList.add("wrong");else b.classList.add("dim")});
+  const ok=k==d.a;if(ok)s++;
+  if(ok){const sc=$("scene");sc.classList.remove("go");sc.classList.add("on");void sc.offsetWidth;sc.classList.add("go");}
+  $("sc").textContent="⭐ "+s;
+  const f=$("fb");f.style.display="block";
+  f.innerHTML="<strong></strong><span></span>";
+  f.firstChild.textContent=ok?"כל הכבוד! 🎉":"כמעט! התשובה הנכונה מסומנת בירוק.";
+  f.lastChild.textContent=d.e;
+  const n=$("next");n.textContent=i==Q.length-1?"לתוצאה":"לשאלה הבאה";
+  n.classList.remove("hide");n.focus();
+}
+$("next").onclick=()=>{i++;if(i>=Q.length)finish();else show()};
+function finish(){
+  $("quiz").classList.add("hide");$("end").classList.remove("hide");
+  const r=s/Q.length;
+  $("emoji").textContent=r>=.85?"🏆":r>=.6?"🦢":"🐦";
+  $("score").textContent="צדקתם ב-"+s+" מתוך "+Q.length;
+  $("msg").textContent=r>=.85?"מהנדסי נדידה מהשורה הראשונה!":r>=.6?"יופי! עוד טיפה ותגיעו לשיא.":"נסו שוב, ובדקו את המצגת. אתם בדרך הנכונה!";
+}
+$("again").onclick=()=>{i=0;s=0;$("end").classList.add("hide");$("quiz").classList.remove("hide");show()};
+show();
+</script>
+</body>
+</html>
